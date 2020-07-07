@@ -37,12 +37,21 @@
       background-color: red;
     }
 
-    h3 {
+    .some {
+      font-size: 5rem;
       display: flex;
       justify-content: center;
       align-items: center;
       text-align: center;
+      margin-top: 10px;
     }
+
+    @media (max-width : 600px) {
+      .some {
+        font-size: 2rem;
+      }
+    }
+
   </style>
 </head>
 
@@ -61,7 +70,7 @@
           <button class="medium">Medium</button>
           <button class="hard">Hard</button>
         </div>
-        <h3 class="display-2 mb-3" id="current-word">hello</h3>
+        <p class="display-2 mb-3 some" id="current-word">hello</p>
         <input type="text" class="form-control form-control-lg" placeholder="Start typing..." id="word-input">
         <h4 class="mt-3" id="message"></h4>
 
@@ -82,8 +91,7 @@
           <div class="col-md-12">
             <div class="card card-body bg-secondary text-white">
               <h5>Instructions</h5>
-              <p>Type each word in the given amount of seconds to score. To play again, just type the current word. Your score
-                will reset</p>
+              <p>Select Level & just type in the input bar <br /> After game over, input bar will be disabled. To play again, repeat above procedures  </p>
             </div>
           </div>
         </div>
