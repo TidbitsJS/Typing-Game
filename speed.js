@@ -25,9 +25,9 @@ const medium = document.querySelector('.medium')
 const hard = document.querySelector('.hard')
 
 const levels = {
-  easy: 15,
-  medium: 10,
-  hard: 5
+  easy: 25,
+  medium: 20,
+  hard: 15
 };
 
 easy.addEventListener('click', () => {
